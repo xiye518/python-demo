@@ -16,7 +16,7 @@ sk.connect(("127.0.0.1", 6666,))
 
 
 while True:
-    message = input("请输入要发送的消息(输入q退出,cd进入菜单)：")
+    message = input("请输入要发送的消息(输入q退出,cd进入菜单)：\n")
     if message == "q":
         sk.sendall(bytes(message, encoding="utf-8"))
         break
